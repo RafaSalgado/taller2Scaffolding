@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre universidad:</strong>
+  <%= @university.nombre_universidad %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @university.string %>
+</p>
+
+<p>
+  <strong>Carrera:</strong>
+  <%= @university.carrera %>
+</p>
+
+<p>
+  <strong>Semestre:</strong>
+  <%= @university.semestre %>
+</p>
+
+<p>
+  <strong>Porcentaje:</strong>
+  <%= @university.porcentaje %>
+</p>
+
+<%= link_to 'Edit', edit_university_path(@university) %> |
+<%= link_to 'Back', universities_path %>

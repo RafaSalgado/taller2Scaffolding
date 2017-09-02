@@ -1,0 +1,42 @@
+<%= form_with(model: university, local: true) do |form| %>
+  <% if university.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(university.errors.count, "error") %> prohibited this university from being saved:</h2>
+
+      <ul>
+      <% university.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre_universidad %>
+    <%= form.text_field :nombre_universidad, id: :university_nombre_universidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :university_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :carrera %>
+    <%= form.text_field :carrera, id: :university_carrera %>
+  </div>
+
+  <div class="field">
+    <%= form.label :semestre %>
+    <%= form.text_field :semestre, id: :university_semestre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porcentaje %>
+    <%= form.text_field :porcentaje, id: :university_porcentaje %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

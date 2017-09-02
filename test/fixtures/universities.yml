@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_universidad: MyString
+  string: MyString
+  carrera: MyString
+  semestre: MyString
+  porcentaje: 9.99
+
+two:
+  nombre_universidad: MyString
+  string: MyString
+  carrera: MyString
+  semestre: MyString
+  porcentaje: 9.99
